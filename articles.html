@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aktualności</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script> $(function(){ $("#nav-placeholder").load("nav.html"); }); </script>
+
+    <h1 style="text-align: center;"><strong>Aktualności</strong></h1>
+
+    <!--Articles-->
+    <div id="articles-container">
+        <article>
+            <h2 class="article-num">#002</h2>
+            <h1 class="aritlce-title"<strong>Jak zacząłem programować</strong></h1>
+            <p>Postanowiłem nauczyć się programować w <strong> styczniu 2020.</strong> W pierwsze 3 dni nauczyłem się podstaw <strong>C#</strong> (jak działają zmienne, funkcje, klasy itp.). Zapytałem się mamy czy mogę zrobić dla niej jakiś program. Powiedziała, że mogę zrobić <strong>program do zapisywania książek</strong>. <br /><br />W tym programie można by było dodawać nowe książki, usuwać je, edytować i przeglądać. <br />Do stworzenia tej aplikacji postanowiłem wybrać graficzną bibliotekę <strong>WinForms</strong>, pomimo tego, że każdy pisał żeby zacząć od aplikacji konsolowych. Program udało mi się zrobić w około tydzień. Niestety nie mam żadnych screenshotów lub nagrań, ponieważ zrobiłem wersję 2.0 tego programu i starą wersję usunąłem.</p>
+            <img class="article-img-center" src="https://1.bp.blogspot.com/-vPnaS5gnOEM/Wlc_qXACE4I/AAAAAAAAFYQ/pAxeCoJ3sHMFV5poCCwdvj7Ghw2KowfSQCLcBGAs/s1600/Winform.png">
+        </article>
+    
+        <article>
+            <h2 class="article-num">#001</h2>
+            <h1 class="aritlce-title"><strong>Moje ulubione języki programowania</strong></h1>
+            <p>Moim ulubionym językiem programowania zdecydowanie jest C++. Na drugim miejscu umieściłbym Javę i C#.<br />Na kolejnych miejsach: C, JavaScript, Kotlin, Dart, Python.</p>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width=100>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg" width=75>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/commons/1/13/C-Sharp.png" width=110>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" width=100>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Javascript_badge.svg" width=100>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/480px-Kotlin_Icon.png" width=100>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" width=100>
+            <img class="article-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width=100>
+        </article>
+    </div>
+
+    <!--Footer-->
+    <div id="footer-placeholder"></div>
+    <script> $(function(){ $("#footer-placeholder").load("footer.html"); }); </script>
+</body>
+</html>

@@ -1,45 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Maciej Niziołek Blog - Aktualności</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="script.js"></script>
-        <meta charset=“UTF-8”>
-        <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
-        <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
-    </head>
+<head>
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script> $(function(){ $("#nav-placeholder").load("nav.html"); }); </script>
 
-    <body>
-        <!--Navigation bar-->
-        <div id="nav-placeholder"></div>
-        <script>
-            $(function(){
-                $("#nav-placeholder").load("nav.html");
-            });
-        </script>
+    <h1 style="text-align: center;"><strong>Strona Główna</strong></h1>
 
-        <h1 style="text-align: center;"><strong>Aktualności</strong></h1>
+    <article>
+        <h1 style="text-align: center;">Witaj na moim blogu!</h1>
+        <p>Znajdziesz na nim moje historie związane z programowaniem jak i o różynch innych tematach.</p>
+        <br></br>
+        <img class="center-img" src="https://media.tenor.com/images/acc4116372dcc4b342cb1a00ae657151/tenor.gif">
 
-        <!--Articles-->
-        <div id="articles-container">
-            <article>
-                <h1 style="text-align: center;"><strong>Jak zacząłem programować</strong></h1>
-                <p>Postanowiłem nauczyć się programować w <strong>wakacje 2019.</strong> W pierwsze 3 dni nauczyłem się podstaw <strong>C#</strong> (jak działają zmienne, funkcje, klasy itp.). Zapytałem się mamy czy mogę zrobić dla niej jakiś program. Powiedziała, że mogę zrobić <strong>program do zapisywania książek</strong>. <br /><br />W tym programie można by było dodawać nowe książki, usuwać je, edytować i przeglądać. <br />Do stworzenia tej aplikacji postanowiłem wybrać graficzną bibliotekę <strong>WinForms</strong>, pomimo tego, że każdy pisał żeby zacząć od aplikacji konsolowych. Program udało mi się zrobić w około tydzień.</p>
-            </article>
-       
-            <article>
-                <h1 style="text-align: center;"><strong>Moje ulubione języki programowania</strong></h1>
-                <p>Moim ulubionym językiem programowania zdecydowanie jest C++. Na drugim miejscu umieściłbym Javę i C#.<br />Na kolejnych miejsach: C, JavaScript, Kotlin, Dart, Python.</p>
-            </article>
-        </div>
+        <a target="_blank" href="https://github.com/Rotthin/rotthin.github.io">
+            <p>Cały kod strony znajduje się na Githubie.</p>
+        </a>
+    </article>
 
-		<!--Footer-->
-        <div id="footer-placeholder"></div>
-        <script>
-            $(function(){
-                $("#footer-placeholder").load("footer.html");
-            });
-        </script>
-    </body>
+    <!--Footer-->
+    <div id="footer-placeholder"></div>
+    <script> $(function(){ $("#footer-placeholder").load("footer.html"); }); </script>
+</body>
 </html>
